@@ -11,7 +11,14 @@ export default function Chat(){
         console.log(values);
 
         setChatMessagse((prevMessages) =>{
-            const newMessages = [...prevMessages,values.text,];
+
+            const newMsg = {
+                text: values.text,
+                id:prevMessages.length,
+                time: Date.now(),
+            };
+
+            const newMessages = [...prevMessages, newMsg,];
             return newMessages;
         })
         formikBag.resetForm()

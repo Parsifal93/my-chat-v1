@@ -4,13 +4,15 @@ import Chat from "./components/Chat";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
+   {/* <BrowserRouter>
       <Switch>
-        <Route exact path="/chat">
+   <Route exact path="/chat">*/}
           <Chat />
-        </Route>
+        {/*</Route>
       </Switch>
-    </BrowserRouter>
+        </BrowserRouter>*/}
+   </div>
   );
 }
 
